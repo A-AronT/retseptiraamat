@@ -12,10 +12,6 @@ code {
     monospace;
 }
 
-li {
-  word-spacing: 0px;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -24,4 +20,9 @@ form {
 input, textarea {
   width: 33%;
   margin: 10px;
+}
+
+
+span {
+  padding-right: 10px;
 }

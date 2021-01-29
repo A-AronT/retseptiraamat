@@ -7,7 +7,7 @@ const RecipeList = (props) => {
         <Link to={'/new'}>Lisa uus retsept</Link>
         <ul>
           {props.recipes.map((recipe, index) => {
-            return <li key={recipe}> {props.recipes[index].name} {props.recipes[index].duration}min {props.recipes[index].tags} <Link to={`/recipes/${index}`}>Vaata lähemalt</Link></li>
+            return <li key={recipe}> <span>{props.recipes[index].name}</span> <span>{props.recipes[index].duration}min</span> <span>{props.recipes[index].tags.join(" ")}</span> <Link to={`/recipes/${index}`}>Vaata lähemalt</Link></li>
           })}
         </ul>
       </div>
